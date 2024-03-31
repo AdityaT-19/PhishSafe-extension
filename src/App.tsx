@@ -22,7 +22,7 @@ function App() {
     }
     setIsLoading(true);
     console.log(url);
-    const res = await fetch("http://localhost:8000/checkURL", {
+    const res = await fetch("https://phishsafe-server.onrender.com/checkURL", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -67,7 +67,7 @@ function App() {
             const tab = tabs[0];
             const url = tab.url!;
             setUrl(url);
-            const res = await fetch("http://localhost:8000/checkURL", {
+            const res = await fetch("https://phishsafe-server.onrender.com/checkURL", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
